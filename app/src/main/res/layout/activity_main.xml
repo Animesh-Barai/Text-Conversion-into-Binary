@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_secondary_dark"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="@color/text_light"
+            android:text="Hey, what do you want to do?" />
+
+        <Button
+            android:id="@+id/button1"
+            android:backgroundTint="@color/button_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_light"
+            android:text="Encrypt" />
+
+        <Button
+            android:id="@+id/button2"
+            android:backgroundTint="@color/button_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_light"
+            android:text="Decrypt" />
+
+        <Button
+            android:id="@+id/button6"
+            android:backgroundTint="@color/button_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_light"
+            android:text="About" />
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-6575183577141875/5184661036"
+        ads:layout_anchorGravity="bottom|center"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="665dp"
+        tools:ignore="MissingConstraints" />
+</android.support.constraint.ConstraintLayout>

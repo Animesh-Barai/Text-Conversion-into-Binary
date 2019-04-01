@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aork.hack.me">
+<uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/binary_text_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/binary_text_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.aork.hack.me.splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.aork.hack.me.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.aork.hack.me.Encrypt" />
+        <activity android:name="com.aork.hack.me.Decrypt" />
+        <activity android:name="com.aork.hack.me.PIN" />
+        <activity android:name="com.aork.hack.me.decPIN" />
+        <activity android:name="com.aork.hack.me.about" />
+        <activity android:name="com.aork.hack.me.EncryptedMessage" />
+        <activity android:name="com.aork.hack.me.DecryptedMessage" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6575183577141875~2941641073"/>
+    </application>
+
+</manifest>
